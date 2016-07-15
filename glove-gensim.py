@@ -80,7 +80,7 @@ def check_num_lines_in_glove(filename, check_checksum=False):
 # More models can be downloaded from http://nlp.stanford.edu/projects/glove/
 glove_file="glove.840B.300d.txt"
 _, tokens, dimensions, _ = glove_file.split('.')
-num_lines = check_num_lines_in_glove(glove_file)
+num_lines = check_num_lines_in_glove(glove_file) + 1
 dims = int(dimensions[:-1])
 
 # Output: Gensim Model text format.
